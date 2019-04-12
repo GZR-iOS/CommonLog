@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CommonLog'
-  s.version          = '2.0'
+  s.version          = '2.1'
   s.summary          = 'Print log to console'
   s.description      = <<-DESC
 Manage & pring logs.
@@ -19,5 +19,5 @@ Manage & pring logs.
   s.source           = { :git => 'git@github.com:GZR-iOS/CommonLog.git', :branch => "version/" + s.version.to_s }
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.12'
-  s.source_files     = 'CMLogging.swift'
+  s.source_files     = '*.swift'
 end
