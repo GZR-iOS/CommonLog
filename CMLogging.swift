@@ -250,3 +250,11 @@ public func CMLog(block: @escaping () -> String, category: CMLogger.LogCategory?
                   date: Date = Date(), functionName: String = #function, fileName: String = #file, lineNum: Int = #line) {
     CMLogger.shared.log(block: block, category: category, group: group, date: date, functionName: functionName, fileName: fileName, lineNum: lineNum)
 }
+
+internal func CMWriteSuffix(max: Int, word: String, result: inout String, char: String = " ") {
+    var tmp = word
+    while tmp.count < max {
+        tmp += char
+    }
+    result += tmp
+}
